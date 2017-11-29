@@ -1,0 +1,167 @@
+<!DOCTYPE html> 
+<html>
+<body>
+<meta name="viewport" content="width=device-width, initial-scale=0.6">
+<div id='div2'>
+<ul>
+  <li><a class="active" href="#home">Home</a></li>
+  <li><a href="#news">News</a></li>
+  <li><a href="#contact">Contact</a></li>
+  <li><a href="#about">About</a></li>
+</ul>
+</div>
+<div id='div1'>
+<h1 id='Javasurftitle'>Javasurf</h1>
+<h2 id='javasurfsubtitle'>Java Search Engine</h2>
+</div>
+
+<style>
+/*Titlestyle*/
+#Javasurftitle{
+	    text-shadow:  0 0 5px darkblue;
+	text-align: Center;
+	font-family: monospace;
+}
+#javasurfsubtitle{
+        text-shadow:  0 0 5px darkblue;
+	text-align: Center;
+	font-family: monospace;
+}
+
+</style>
+
+<style>
+/*Nav styling*/
+body {margin:0;}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: grey;
+    position: static;
+    top: 0;
+    width: 100%;
+	font-family: Monospace;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover:not(.active) {
+    background-color: #darkblue;
+}
+
+.active {
+    background-color: blue;
+}
+</style>
+<!--Image for title/logo starts here-->
+<img src="data:image/jpeg;base64,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">
+
+<style>
+img{
+       position: absolute;
+    left: 600px;
+    top: 40px;
+    z-index: -1;
+	opacity: 0.5;
+}
+</style>
+<!--logo code ends here-->
+
+<!--news content code-->
+<div id='newsdiv'>
+<h1 id='newsheader'>Latest News.</h1>
+<h2 id='newstitle'>Javasurf is Live!</h2>
+<p id='newscontent'>Javasurf is now live on the web.<br>You can use the navigation bar to browse other pages of our site.<br>Sorry there isnt much to do at the moment, new features will come soon!</p>
+</div>
+
+<style>
+#newsdiv{
+    margin-left: 850px;
+}
+#newsheader{
+    font-family: monospace;
+	text-shadow: 0 0 5px darkblue;
+}
+#newstitle{
+    text-shadow: 0 0 5px darkblue;
+	font-family: monospace;
+}
+#newscontent{
+    font-family: monospace;
+}
+</style>
+<!--end of news content code-->
+
+<!--coming soon code-->
+<div id='featureddiv'>
+<h1 id='featuretitle'>Coming soon...<h1>
+<h2 id='featuresubtitle'>Javasurf, Christmas Edition.</h2>
+
+<style>
+#featureddiv{
+        text-shadow: 0 0 5px darkblue;
+	font-family: monospace;
+	margin-left: 100px;
+}
+</style>
+
+</div>
+<!--end of coming soon code.-->
+
+<!--Start of help code-->
+<div id='helptext'>
+
+<h2 id='advice'>For help see Contact page.</h2>
+
+<style>
+#helptext{
+    text-align: center;
+	    text-shadow: 0 0 5px darkblue;
+	font-family: monospace;
+}
+</style>
+
+</div>
+<!--end of help code.-->
+
+<script>
+  (function() {
+    var cx = '013300971508132117292:8kvmkieworq';
+    var gcse = document.createElement('script');
+    gcse.type = 'text/javascript';
+    gcse.async = true;
+    gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(gcse, s);
+  })();
+</script>
+<gcse:search></gcse:search>
+<!--end of document for now.-->
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
